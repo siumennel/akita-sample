@@ -9,7 +9,9 @@ for (let i = 0; i < count; i++) {
   data.push({
     id: faker.random.number(),
     title: faker.commerce.productName(),
-    price: faker.commerce.price()
+    price: faker.commerce.price(),
+    isNew: faker.random.boolean(),
+    country: faker.random.arrayElement(['USA', 'EU', 'ASIA', 'NONE']),
   });
 }
 

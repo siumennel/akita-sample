@@ -8,9 +8,8 @@ export interface ProductsState extends EntityState<Product> {
       condition: {
         new: boolean;
         used: boolean;
-        notSpecified: boolean;
       },
-      location: boolean;
+      location: string;
     }
   }
 
@@ -22,9 +21,8 @@ const initialState: ProductsState = {
       condition: {
         new: false,
         used: false,
-        notSpecified: false,
       },
-      location: false,
+      location: '',
     }
   }
 }

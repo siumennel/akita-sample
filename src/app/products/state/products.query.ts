@@ -8,7 +8,7 @@ import { Product } from './product.model';
 })
 export class ProductsQuery extends QueryEntity<ProductsState, Product> {
   filtersChange$ = this.select(state => state.ui.filters);
-  
+
   constructor(protected store: ProductsStore) {
     super(store);
   }

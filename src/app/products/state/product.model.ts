@@ -4,4 +4,6 @@ export type Product = {
   id: ID;
   title: string;
   price: number;
-}
+  isNew: boolean;
+  country: string;
+};
