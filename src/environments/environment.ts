@@ -6,14 +6,14 @@ export const environment = {
   production: false,
     // Your web app's Firebase configuration
     firebase : {
-      apiKey: 'AIzaSyC4C500JcgJ8Fa9a1BjNeanEj6lSVJnwdo',
-      authDomain: 'fir-test-d044e.firebaseapp.com',
-      databaseURL: 'https://fir-test-d044e.firebaseio.com',
+      apiKey: '****',
+      authDomain: '****',
+      databaseURL: '****',
       projectId: 'fir-test-d044e',
       storageBucket: 'fir-test-d044e.appspot.com',
       messagingSenderId: '862128689065',
-      appId: '1:862128689065:web:2ead96bff278badbf17eb8',
-      measurementId: 'G-B0ESTLF7BN'
+      appId: '****',
+      measurementId: '****'
     }
 };
 
