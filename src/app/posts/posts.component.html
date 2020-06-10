@@ -1,0 +1,19 @@
+<ng-template #idle>Idle</ng-template>
+
+<h5>Loaders</h5>
+
+<p>Get =>
+  <span *ngIf="(loaders.get$ | async); else idle">Loading...</span>
+</p>
+
+<p>POST =>
+  <span *ngIf="(loaders.add$ | async); else idle">Loading...</span>
+</p>
+
+<p>PUT => <
+  span *ngIf="(loaders.update$ | async); else idle">Loading...</span>
+</p>
+
+<p>DELETE =>
+  <span *ngIf="(loaders.delete$ | async); else idle">Loading...</span>
+ </p>

@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  <a class="navbar-brand" routerLink="/">AkitaBay</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="boarding">boarding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="story">story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="products">products</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<h3>Open Redux devtools to see the state</h3>
+
+<counter (update)="onUpdate($event)" name="one"></counter>
+<counter (update)="onUpdate($event)" name="two"></counter>
+<counter (update)="onUpdate($event)" name="three"></counter>
+<hr/>
+<ul>
+  <li *ngFor="let movie of movies$ | async">{{ movie.title }}</li>
+</ul>
+
+selectMovie=>{{ (selectMovie$ | async )?.title }}
+<hr/>
+<router-outlet></router-outlet>

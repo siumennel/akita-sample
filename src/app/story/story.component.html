@@ -1,0 +1,11 @@
+<p>story</p>
+<form [formGroup]="form">
+  <input formControlName="title" />
+  <input formControlName="story" />
+  <input formControlName="draft" />
+  <input formControlName="category" />
+  <br />
+  <button type="submit" (click)="submit()">
+    Save
+  </button>
+</form>

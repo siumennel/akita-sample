@@ -1,0 +1,19 @@
+<div class="container">
+
+	<div class="flex">
+
+		<app-filters></app-filters>
+
+		<div class="flex-1">
+			<app-product *ngFor="let product of products$ | async" 
+                   [product]="product"></app-product>
+
+			<div class="alert alert-dark" *ngIf="isLoading$ | async">
+				Fetching products...
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
